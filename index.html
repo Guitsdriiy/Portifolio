@@ -67,16 +67,16 @@
             <a href="#home" class="active"><i class="fa fa-home"></i>Home</a>
           </li>
           <li>
-            <a href="#about"><i class="fa fa-user"></i>About</a>
+            <a href="#about"><i class="fa fa-user"></i>Sobre</a>
           </li>
           <li>
-            <a href="#services"><i class="fa fa-list"></i>Services</a>
+            <a href="#services"><i class="fa fa-list"></i>Serviços</a>
           </li>
           <li>
             <a href="#portifolio"><i class="fa fa-briefcase"></i>Portifólio</a>
           </li>
           <li>
-            <a href="#contact"><i class="fa fa-comments"></i>Contact</a>
+            <a href="#contact"><i class="fa fa-comments"></i>Contato</a>
           </li>
         </ul>
       </div>
@@ -581,58 +581,73 @@
               I'M VERY RESPOSIVE TO MESSAGES
             </h4>
             <!-- ======= Contact Form ===== -->
-            <div class="row">
-              <div class="contact-form padd-15">
-                <div class="row">
-                  <div class="form-item col-6 padd-15">
-                    <div class="form-group">
+            <form action="https://api.staticforms.xyz/submit" method="post">
+              <div class="row">
+                <div class="contact-form padd-15">
+                  <div class="row">
+                    <div class="form-item col-6 padd-15">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Name"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-item col-6 padd-15">
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          id="email"
+                          class="form-control"
+                          placeholder="email"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-item col-12 padd-15">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          id="titulo"
+                          name="name"
+                          class="form-control"
+                          placeholder="Subject"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-item col-12 padd-15">
+                      <div class="form-group">
+                        <textarea
+                          name=""
+                          class="form-control"
+                          id=""
+                          placeholder="Message"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-item col-12 padd-15">
+                      <button type="submit" class="btn">Send Message</button>
                       <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Name"
+                        type="hidden"
+                        name="accessKey"
+                        value="67ea571c-54d1-4e84-aab9-42a0e3fee6c4"
+                      />
+                      <input
+                        type="hidden"
+                        name="redirectTo"
+                        value="https://portifolio-guileopoldino.vercel.app/"
                       />
                     </div>
-                  </div>
-                  <div class="form-item col-6 padd-15">
-                    <div class="form-group">
-                      <input
-                        type="email"
-                        class="form-control"
-                        placeholder=" eamail"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-item col-12 padd-15">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Subject"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-item col-12 padd-15">
-                    <div class="form-group">
-                      <textarea
-                        name=""
-                        class="form-control"
-                        id=""
-                        placeholder="Message"
-                      ></textarea>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-item col-12 padd-15">
-                    <button type="submit" class="btn">Send Message</button>
                   </div>
                 </div>
               </div>
-            </div>
+            </form>
           </div>
         </section>
         <!-- === Contact Section End === -->
