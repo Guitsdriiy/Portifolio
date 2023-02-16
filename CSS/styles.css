@@ -58,6 +58,9 @@ ul {
   z-index: 1;
 }
 .section.active {
+  background-image: url(/images/teste.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
   z-index: 2;
   opacity: 1;
   animation: slideSection 1s ease;
