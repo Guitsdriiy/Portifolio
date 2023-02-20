@@ -21,12 +21,16 @@ function setActiveStyle(color) {
   });
 }
 /* ======================================== theme light and dark mode =======================*/
+
 const dayNight = document.querySelector(".day-night");
 dayNight.addEventListener("click", () => {
   dayNight.querySelector("i").classList.toggle("fa-moon");
   dayNight.querySelector("i").classList.toggle("fa-sun");
   document.body.classList.toggle("dark");
+
+  // document.body.toggle("img1");
 });
+
 window.addEventListener("load", () => {
   if (document.body.classList.contains("dark")) {
     dayNight.querySelector("i").classList.add("fa-moon");
@@ -34,3 +38,19 @@ window.addEventListener("load", () => {
     dayNight.querySelector("i").classList.add("fa-sun");
   }
 });
+
+if (document.body.dark == 1) {
+  document.getElementById("trocarimg").src = "images/Frame 6.png";
+} else {
+  document.getElementById("trocarimg").src = "/images/teste3.png";
+}
+
+/* ===== trocar img start ===== */
+// function img1() {
+//   document.getElementById("trocarimg").src = "images/Frame 6.png";
+// }
+
+// function img2() {
+//   document.getElementById("trocarimg").src = "/images/teste3.png";
+// }
+/* ===== trocar img End ===== */
