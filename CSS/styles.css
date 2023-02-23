@@ -677,6 +677,7 @@ h3.minha-proficao {
   padding: 0 50px;
   cursor: pointer;
 }
+
 @media only screen and (max-width: 1199px) {
   .section .container {
     padding-top: 70px;

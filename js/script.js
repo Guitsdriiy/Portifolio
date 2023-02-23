@@ -1,6 +1,20 @@
 /* ======================== typing animation */
 var typed = new Typed(".typing", {
-  strings: ["Web Designer", "Web Developer", "Graphic Designer", "Youtuber"],
+  strings: [
+    "Analista de Sistemas",
+    "Analista de Segurança",
+    "Analista de Desenvolvimento de Sistemas",
+  ],
+  typeSpeed: 100,
+  BackSpeed: 60,
+  loop: true,
+});
+var typedd = new Typed(".typed", {
+  strings: [
+    "Analista de Sistemas",
+    "Analista de Segurança",
+    "Analista de Desenvolvimento de Sistemas",
+  ],
   typeSpeed: 100,
   BackSpeed: 60,
   loop: true,
@@ -76,3 +90,37 @@ function asideSectionTogglerBtn() {
     allSection[i].classList.toggle("open");
   }
 }
+
+/* Idade */
+function getAge(dateString) {
+  const today = new Date();
+  const birthDate = new Date(dateString);
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const m = today.getMonth() - birthDate.getMonth();
+
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+
+  return age;
+}
+var teste = getAge("2001/07/21");
+
+document.getElementById("idade").innerHTML = teste;
+
+function getAgee(dateString) {
+  const today = new Date();
+  const birthDate = new Date(dateString);
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const m = today.getMonth() - birthDate.getMonth();
+
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+
+  return age;
+}
+var ano = getAgee("2022/03/01");
+
+document.getElementById("ano").innerHTML = ano;
+// alert(getAge("2001/07/21"));
