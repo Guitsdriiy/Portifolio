@@ -120,7 +120,7 @@ function getAgee(dateString) {
 
   return age;
 }
-var ano = getAgee("2022/03/01");
+var ano = getAgee("2022/02/01");
 
 document.getElementById("ano").innerHTML = ano;
 // alert(getAge("2001/07/21"));
